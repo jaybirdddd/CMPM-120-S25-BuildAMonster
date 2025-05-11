@@ -62,6 +62,7 @@ class Monster extends Phaser.Scene {
         my.sprite.antenna = this.add.sprite(this.antennaX, this.antennaY, "monsterParts", "detail_green_antenna_small.png");
         
         this.dKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
+        this.aKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
 
     }
 
@@ -132,7 +133,7 @@ class Monster extends Phaser.Scene {
 
         }
        else if(Phaser.Input.Keyboard.JustUp(this.dKey)) {
-        /*    
+            
             my.sprite.body.velocity.x = 0;
             my.sprite.leftArm.velocity.x = 0;            
             my.sprite.rightArm.velocity.x = 0;
@@ -143,7 +144,7 @@ class Monster extends Phaser.Scene {
             my.sprite.fangMouth.velocity.x = 0;
             my.sprite.nose.velocity.x = 0;
             my.sprite.antenna.velocity.x = 0;
-            */
+            
         }
     }
 
